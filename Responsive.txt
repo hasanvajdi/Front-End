@@ -1,0 +1,6 @@
+mobile :  max 600px
+tablets : min 600px
+tablet 2: min 	
+desktops: min 992px 
+large laptops and desktops : min 1200px
+

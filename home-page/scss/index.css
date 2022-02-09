@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.main {
+  background-color: #040303;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 0;
+}
+
+.main img {
+  height: 90vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main .navigation {
+  color: white !important;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  z-index: 3;
+}
+
+.main .navigation .menu {
+  height: 60px;
+  width: auto;
+}
+
+.main .navigation .menu-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+}
+
+.main .navigation .menu-options li {
+  font-size: 18px;
+  padding: 0px 10px 0px 10px;
+  margin: 0;
+}
+
+.main .navigation .menu-options li:hover {
+  color: #B3541E;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+}
+
+.main .navigation .brand {
+  font-size: 50px;
+  left: 0;
+  font-family: 'Supermercado One', cursive;
+  margin-left: 350px;
+  margin-top: 10px;
+}
+
+.main .navigation .menu-icon {
+  visibility: hidden;
+}
+
+.main .main-side {
+  width: 30%;
+  height: 500px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  align-items: center !important;
+  padding-right: 50px;
+}
+
+.main h1 {
+  font-size: 38px;
+  color: white;
+  margin-top: 100px;
+}
+
+.main p {
+  width: 70%;
+  color: white;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.main .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 3px;
+  margin-right: 1%;
+  margin-top: 10px;
+  background-color: #B3541E;
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 2px !important;
+  cursor: pointer;
+}
+
+.main .mobile-background {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  background-color: #444444;
+  top: 0;
+}
+
+@media (max-width: 600px) {
+  .main img {
+    height: 100vh !important;
+  }
+  .main .navigation {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .brand {
+    margin-left: 10px !important;
+    font-size: 40px !important;
+    margin-top: 5px !important;
+  }
+  .main .main-side {
+    display: none;
+  }
+  .mobile-background {
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    background-color: #040303 !important;
+    overflow: hidden;
+  }
+  .mobile-background .mobile-menu {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .mobile-background .mobile-menu ul {
+    list-style-type: none;
+    text-align: center;
+    position: unset !important;
+  }
+  .mobile-background .mobile-menu ul li {
+    font-size: 23px;
+    padding: 0px 10px 0px 10px;
+    margin: 0;
+    color: white;
+    padding-bottom: 10px;
+  }
+  .mobile-background .mobile-menu ul li:hover {
+    color: #B3541E;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    cursor: pointer;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-icon {
+    visibility: visible !important;
+    margin-right: 12px;
+    margin-top: 10px;
+    font-size: 35px !important;
+    cursor: pointer;
+    color: white !important;
+  }
+  .menu-icon:hover {
+    color: #B3541E;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .main img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 600px) {
+  .main img {
+    height: 100vh;
+  }
+  .main .navigation {
+    width: 100vw;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .main .navigation .brand {
+    margin-left: 200px !important;
+  }
+  .main .navigation .menu-options li {
+    font-size: 17px;
+  }
+  .main-side {
+    display: none !important;
+  }
+  .mobile-background {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .navigation .brand {
+    margin-left: 100px !important;
+  }
+  .navigation .menu-options li {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main .navigation {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+    margin-left: -50px !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .brand {
+    margin-right: 200px;
+  }
+  .main-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 0px !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+  }
+  .main-side h1 {
+    font-size: 25px;
+  }
+  .main-side p {
+    font-size: 14px;
+  }
+  .main-side .button {
+    width: 90px;
+    height: 35px;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .brand {
+    margin-right: 200px !important;
+  }
+  .menu {
+    margin-right: 200px !important;
+  }
+  .main-side {
+    display: unset !important;
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+            align-items: flex-end !important;
+  }
+  .main-side h1 {
+    font-size: 35px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
