@@ -1,0 +1,188 @@
+$gray-color : #ebeef2;
+$purpul-color : #673ab7;
+$yellow-color : #ffc107;
+$body-background-color : #f4f6f8;
+
+@mixin flexBox($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin transition {
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+
+}
+
+
+@font-face {
+    font-family: yekan;
+    src: url("../font/yekan5.ttf");
+}
+
+
+body{
+    margin : 0;
+    background-color: #eff1f5;
+    font-family: yekan;
+}
+
+
+.header-navbar-container{
+    width: 100%;
+    height : 180px;
+    background-color: yellow;
+
+    .header{
+        background-color: white;
+        width : 100%;
+        height : 100px;
+        border-bottom : 1.5px solid #eee;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        
+
+        .header-icon{
+            width : 70px;
+            height : 70%;
+            float : right;
+            margin-right : 20px;
+        }
+
+
+        .login-signup{
+            background-color: $gray-color;
+            border-radius: 3px;
+            width:11%;
+            height : 30px;
+            padding : 5px;
+            color : gray;
+            position: absolute;
+            left : 0;
+            margin-left : 110px;
+
+            .login-signup-icon{
+                float: right;
+                color : rgb(22, 22, 22);
+                font-size : 29px;
+                margin-right : 6px;
+            }
+
+            
+            .login-signup-text{
+                position : absolute;
+                color : black;
+                font-size : 16px;
+                padding-left : 16px;
+                margin-top : 4px;
+            }
+        }
+
+
+        .cart{
+            background-color: $purpul-color;
+            width : 30px;
+            height: 30px;
+            padding : 7px;
+            border-radius: 3px;
+            margin-right : auto;
+            margin-left : 20px;
+
+
+            .cart-icon{
+                color : white;
+                font-size : 30px;
+            }
+        }
+
+        .search-box{
+            margin : 0;
+            border : none;
+            margin-right : 350px;
+            background-color: $gray-color;
+            width : 380px;
+            height : 40px !important;
+            border-radius: 3px;
+
+
+            .search-input{
+                height : 38px !important;
+                width : 86%;
+                border : none;
+                background-color: $gray-color;
+                direction : rtl;
+                float: right;
+                color : gray;
+                padding-right : 10px;
+                font-size : 16px;
+                border-radius: 3px;
+            }
+
+            .search-input:focus{
+                border: none;
+                outline: none;
+            }
+
+            .search-icon{
+                color : #bfbfbf;
+                font-size: 28px;
+                margin-top: 8px;
+                margin-left: 6px;
+            }
+        }
+    }
+
+    .navbar{
+        background-color: white;
+        width : 100%;
+        height : 80px;
+        direction: rtl;
+        display: flex;
+        align-items: center;
+
+        .products-category{
+            display: flex;
+            width:fit-content;
+            height: fit-content;
+            margin-right : 6px;
+
+        }
+
+        .phone-number{
+            margin-right : auto;
+            @include flexBox(row-reverse);
+
+            .call-icon{
+                color : $purpul-color;
+                font-size : 30px;
+                transform: rotate(10deg);
+            }
+
+            .phone-number-text{
+                font-size : 17px;
+                margin-top : 10px;
+                margin-left : 10px;
+            }
+        }
+
+       
+    }
+
+
+    .navbar>*{
+        padding : 13px;
+        cursor: pointer;
+    }
+
+    .navbar>*:hover{
+        color : $purpul-color;
+        @include transition();
+    }
+
+   
+
+    
+}

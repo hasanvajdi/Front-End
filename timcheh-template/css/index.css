@@ -1,0 +1,187 @@
+@font-face {
+  font-family: yekan;
+  src: url("../font/yekan5.ttf");
+}
+
+body {
+  margin: 0;
+  background-color: #eff1f5;
+  font-family: yekan;
+}
+
+.header-navbar-container {
+  width: 100%;
+  height: 180px;
+  background-color: yellow;
+}
+
+.header-navbar-container .header {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1.5px solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.header-navbar-container .header .header-icon {
+  width: 70px;
+  height: 70%;
+  float: right;
+  margin-right: 20px;
+}
+
+.header-navbar-container .header .login-signup {
+  background-color: #ebeef2;
+  border-radius: 3px;
+  width: 11%;
+  height: 30px;
+  padding: 5px;
+  color: gray;
+  position: absolute;
+  left: 0;
+  margin-left: 110px;
+}
+
+.header-navbar-container .header .login-signup .login-signup-icon {
+  float: right;
+  color: #161616;
+  font-size: 29px;
+  margin-right: 6px;
+}
+
+.header-navbar-container .header .login-signup .login-signup-text {
+  position: absolute;
+  color: black;
+  font-size: 16px;
+  padding-left: 16px;
+  margin-top: 4px;
+}
+
+.header-navbar-container .header .cart {
+  background-color: #673ab7;
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  border-radius: 3px;
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.header-navbar-container .header .cart .cart-icon {
+  color: white;
+  font-size: 30px;
+}
+
+.header-navbar-container .header .search-box {
+  margin: 0;
+  border: none;
+  margin-right: 350px;
+  background-color: #ebeef2;
+  width: 380px;
+  height: 40px !important;
+  border-radius: 3px;
+}
+
+.header-navbar-container .header .search-box .search-input {
+  height: 38px !important;
+  width: 86%;
+  border: none;
+  background-color: #ebeef2;
+  direction: rtl;
+  float: right;
+  color: gray;
+  padding-right: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.header-navbar-container .header .search-box .search-input:focus {
+  border: none;
+  outline: none;
+}
+
+.header-navbar-container .header .search-box .search-icon {
+  color: #bfbfbf;
+  font-size: 28px;
+  margin-top: 8px;
+  margin-left: 6px;
+}
+
+.header-navbar-container .navbar {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-navbar-container .navbar .products-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 6px;
+}
+
+.header-navbar-container .navbar .phone-number {
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.header-navbar-container .navbar .phone-number .call-icon {
+  color: #673ab7;
+  font-size: 30px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.header-navbar-container .navbar .phone-number .phone-number-text {
+  font-size: 17px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.header-navbar-container .navbar > * {
+  padding: 13px;
+  cursor: pointer;
+}
+
+.header-navbar-container .navbar > *:hover {
+  color: #673ab7;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+/*# sourceMappingURL=index.css.map */

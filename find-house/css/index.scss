@@ -1,0 +1,341 @@
+$yellow-color : #f1c40f;
+$gray-color : #fafafc;
+$border-radius : 3px;
+
+
+@mixin flexBox($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin transition {
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+
+}
+
+
+body{
+    margin: 0;
+    background-color: $gray-color;
+}
+
+
+.navbar{
+    margin: 0;
+    padding-bottom: 50 !important;
+    height : 90vh;
+
+    .bottom-white-section{
+        @include flexBox(row);
+        justify-content: flex-start;
+
+
+
+       .icons{
+            margin-left : 25%;
+
+            .white-section-icon{
+                font-size : 20px;
+                padding-left : 15px;
+                @include transition();
+            }
+
+            .white-section-icon:hover{
+                color : $yellow-color;
+                cursor: pointer;
+            }
+       }
+        
+    }
+
+
+    .navbar-image{
+        height : 100%;
+        width : 100%;
+    }
+    
+    .header{
+        height : 100px;
+        width : 100%;
+        top : 0;
+        position: absolute;
+        background: rgba( 0, 0, 0, 0.40 );       
+        backdrop-filter: blur( 5.5px );
+        -webkit-backdrop-filter: blur( 5.5px );
+        @include flexBox(row);
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            color : white;
+            margin-left : 200px;
+
+            li{
+                padding-left : 35px;
+                font-size : 14px;
+            }
+
+            li:last-child{
+                color : black;
+                z-index : 5;
+                font-weight: bold;
+            }
+        }
+        
+        
+    }
+
+
+    .left-side{
+        width : 50%;
+        height : 90vh;
+        position : absolute;
+        top:0;
+        clip-path
+        : polygon(0% 0%, 66% 0, 100% 50%, 63% 100%, 0% 100%);
+        background: rgba( 0, 0, 0, 0.40 );       
+        backdrop-filter: blur( 5.5px );
+        -webkit-backdrop-filter: blur( 5.5px );
+
+        @include flexBox(row);
+
+
+        .finde-properties{
+            width : 350px;
+            height : 250px;
+            background-color: $yellow-color;
+            margin-right : 100px;
+            border-radius: $border-radius;
+
+
+            @for $i from 1 to 4 {
+                .inputs-#{$i}{
+                    padding : 15px;
+                    @include flexBox(row);
+                    justify-content: space-around;
+                    @if $i == 1 {
+                        padding-top:30px;
+                    }
+
+                    .properties-input{
+                        border: none;
+                        outline: none;
+                        width: 45%;
+                        height : 28px;
+                        border-radius: $border-radius;
+                        background-color: $gray-color;
+                    }
+                }
+            }
+
+
+            .submit-form{
+                @include flexBox(row);
+
+                .submit-button{
+                    i{
+                        margin-right : 10px;
+                    }
+                    width : 87%;
+                    height : 35px;
+                    background-color: black;
+                    border-radius: $border-radius;
+                    @include flexBox(row);
+                    color : white;
+                    font-size : 15px;
+                }
+            }
+            
+        }
+    }
+
+
+    .right-side{
+        width : 50%;
+        height : 90%;
+        position : absolute;
+        top:0;
+        right:0;
+        
+        clip-path: polygon(100% 0, 100% 50%, 100% 100%, 41% 100%, 66% 50%, 45% 0);
+        backdrop-filter: blur( 5.5px );
+        -webkit-backdrop-filter: blur( 5.5px );
+        background: rgba( 0, 0, 0, 0.40 );       
+
+
+        .right-side-top{
+            width : 100%;
+            height : 100px;
+            background-color: $yellow-color;
+        }
+    }
+
+
+    .bottom-white-section{
+        background-color: $gray-color;
+        width : 68.9%;
+        right : 0;
+        height : 100px;
+        position: absolute;
+        top : 0;
+        margin-top : 75vh;
+
+        clip-path: polygon(9.4% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+.main-1{
+    width : 100%;
+    height : fit-content;
+    background-color: $gray-color;
+    @include flexBox(row);
+    justify-content: space-around;
+
+    .text-read-more{
+        width : 40%;
+        height: 100%;
+        margin-left : 100px;
+
+        .title{
+            margin-top:50px;
+        }
+
+        .description{
+            color : gray;
+            margin-top : 40px;
+            width : 70%;
+            text-align: justify;
+        }
+
+        .button{
+            @include flexBox(row);
+            width : 30%;
+            height : 30px;
+            background-color: $yellow-color;
+            border-radius: $border-radius;
+            margin-top : 30px;
+        }
+    }
+
+    .contact-now-1{
+        width : 20%;
+        height: 100%;
+        position: relative;
+        margin-right : 50px;
+
+        img{
+            width : 100%;
+            height : 40% !important;
+            border-radius: $border-radius;
+            margin-top : 50px;
+
+        }
+
+        .contact-1-cover{
+            width : 100%;
+            height: 46% !important;
+            position: absolute;
+            @include flexBox(row);
+            color : white;
+            font-size : 20px;
+            margin-top : 50px;
+            border-radius: $border-radius;
+            
+
+            background: rgba( 0, 0, 0, 0.60 );       
+            backdrop-filter: blur( 5.5px );
+            -webkit-backdrop-filter: blur( 5.5px );
+
+        }
+
+        p{
+            text-align: left;
+            width : 90%;
+            padding-left : 10px;
+            color : gray;
+            line-height: 30px;
+        }
+
+        .button{
+            width : 50%;
+            height : 30px;
+            background-color : black;
+            color : white;
+            @include flexBox(row);
+            border-radius: $border-radius;
+        }
+    }
+
+    .contact-now-2{
+        width : 20%;
+        height: 100%;
+        margin-right : 100px;
+
+        .one{
+            margin-top : 50px;
+            position: relative;
+
+            .cover-2-1{
+                width : 100%;
+                height : 100%;
+                position: absolute;
+                border-radius: $border-radius;
+                color : white;
+                font-size : 20px;
+
+                background: rgba( 0, 0, 0, 0.60 );       
+                backdrop-filter: blur( 5.5px );
+                -webkit-backdrop-filter: blur( 5.5px );
+
+                @include flexBox(row);
+            }
+
+            img{
+                
+                width : 100%;
+                height : 90px;
+                border-radius: $border-radius;
+
+            }
+        }
+
+        .two{
+            margin-top : 10px;
+            position: relative;
+
+            .cover-2-2{
+                width : 100%;
+                height : 100%;
+                position: absolute;
+                border-radius: $border-radius;
+                color : white;
+                font-size : 18px;
+
+                background: rgba( 0, 0, 0, 0.60 );       
+                backdrop-filter: blur( 5.5px );
+                -webkit-backdrop-filter: blur( 5.5px );
+
+                @include flexBox(row);
+                text-align : center;
+            }
+
+            img{
+                width : 100%;
+                height : 150px;
+            }
+        }
+
+        .button{
+            width: 50%;
+            height : 30px;
+            color :white;
+            background-color: black;
+            border-radius: $border-radius;
+            @include flexBox(row);
+            margin-top : 50px;
+        }
+    }
+}
