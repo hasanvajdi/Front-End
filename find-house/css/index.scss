@@ -23,6 +23,10 @@ body{
 }
 
 
+input{
+    padding-left:3px;
+}
+
 .navbar{
     margin: 0;
     padding-bottom: 50 !important;
@@ -66,6 +70,14 @@ body{
         backdrop-filter: blur( 5.5px );
         @include flexBox(row);
 
+
+        .menu-icon2{
+            visibility: hidden;
+        }
+        .menu-icon{
+            visibility: hidden;
+        }
+
         ul{
             list-style-type: none;
             display: flex;
@@ -93,11 +105,8 @@ body{
         height : 90vh;
         position : absolute;
         top:0;
-        clip-path
-        : polygon(0% 0%, 66% 0, 100% 50%, 63% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 66% 0, 100% 50%, 63% 100%, 0% 100%);
         background: rgba( 0, 0, 0, 0.40 );       
-        backdrop-filter: blur( 5.5px );
-        -webkit-backdrop-filter: blur( 5.5px );
 
         @include flexBox(row);
 
@@ -160,8 +169,6 @@ body{
         right:0;
         
         clip-path: polygon(100% 0, 100% 50%, 100% 100%, 41% 100%, 66% 50%, 45% 0);
-        backdrop-filter: blur( 5.5px );
-        -webkit-backdrop-filter: blur( 5.5px );
         background: rgba( 0, 0, 0, 0.40 );       
 
 
@@ -188,11 +195,12 @@ body{
 
 .main-1{
     width : 100%;
-    height : fit-content;
+    height : 100%;
+    background-color: blue;
     background-color: $gray-color;
     @include flexBox(row);
     justify-content: space-around;
-
+    
     .text-read-more{
         width : 40%;
         height: 100%;
@@ -221,34 +229,36 @@ body{
 
     .contact-now-1{
         width : 20%;
-        height: 100%;
+        height:100%;
         position: relative;
         margin-right : 50px;
+        margin-top:50px;
 
-        img{
-            width : 100%;
-            height : 40% !important;
-            border-radius: $border-radius;
-            margin-top : 50px;
+        .image-cover-container{
+            width:100%;
+            height: fit-content;
+            position: relative;
 
+            img{
+                width : 100%;
+                height : 100% !important;
+                border-radius: $border-radius;
+            }
+    
+            .contact-1-cover{
+                width : 100%;
+                height: 100% !important;
+                position: absolute;
+                @include flexBox(row);
+                color : white;
+                font-size : 20px;
+                border-radius: $border-radius;
+                background: rgba( 0, 0, 0, 0.60 ); 
+                padding-bottom: 0px !important; 
+               
+            }
         }
-
-        .contact-1-cover{
-            width : 100%;
-            height: 46% !important;
-            position: absolute;
-            @include flexBox(row);
-            color : white;
-            font-size : 20px;
-            margin-top : 50px;
-            border-radius: $border-radius;
-            
-
-            background: rgba( 0, 0, 0, 0.60 );       
-            backdrop-filter: blur( 5.5px );
-            -webkit-backdrop-filter: blur( 5.5px );
-
-        }
+        
 
         p{
             text-align: left;
@@ -286,9 +296,7 @@ body{
                 font-size : 20px;
 
                 background: rgba( 0, 0, 0, 0.60 );       
-                backdrop-filter: blur( 5.5px );
-                -webkit-backdrop-filter: blur( 5.5px );
-
+               
                 @include flexBox(row);
             }
 
@@ -314,9 +322,7 @@ body{
                 font-size : 18px;
 
                 background: rgba( 0, 0, 0, 0.60 );       
-                backdrop-filter: blur( 5.5px );
-                -webkit-backdrop-filter: blur( 5.5px );
-
+                
                 @include flexBox(row);
                 text-align : center;
             }
@@ -350,8 +356,7 @@ body{
         position: absolute;
         width:100%;
         height : 100%;
-        backdrop-filter: blur( 5.5px );
-        -webkit-backdrop-filter: blur( 5.5px );
+      
         background: rgba( 0, 0, 0, 0.80 );       
 
     }
@@ -367,6 +372,7 @@ body{
         background-color : $gray-color;
         position:absolute;
         bottom:0;
+        margin-top:10px;
         margin-top : auto;
         clip-path: polygon(0 0, 50% 0, 61% 100%, 0 100%);
         
@@ -424,8 +430,11 @@ body{
     width:100%;
     height:500px;
     margin-top:70px;
-    @include flexBox(row);
+    @include flexBox(column);
 
+    .box-top-text{
+        visibility: hidden !important;
+    }
 
     .boxes{
         width:70%;
@@ -481,8 +490,6 @@ body{
         width:100%;
         height:100%;
         position:absolute;
-        backdrop-filter: blur( 5.5px );
-        -webkit-backdrop-filter: blur( 5.5px );
         background: rgba( 0, 0, 0, 0.60 );
 
         
@@ -620,5 +627,304 @@ footer{
         color:$yellow-color;
         margin-right:5px;
         margin-left:5px;
+    }
+}
+
+
+@media (max-width:600px){
+    .navbar{
+        .icons{
+            visibility: hidden;
+        }
+
+        .left-side{
+            .finde-properties{
+                visibility: hidden !important;
+            }
+        }
+
+        .header{
+            background: rgba( 0, 0, 0, 0.95 );       
+            z-index: 5;
+            height: 0;
+            display: unset;
+            transition: 1s ease;
+            overflow: hidden;
+            
+
+            .menu-icon2{
+                float: right;
+                margin-right:20px;
+                margin-top:20px;
+                font-size:25px;
+                visibility: visible
+            }
+
+            .navbar-ul{
+                @include flexBox(column);
+                position: absolute;
+                margin-top:100px;
+
+                li{
+                    padding-top:50px;
+                    margin-right:20px;
+                }
+
+                li:hover{
+                    color:$yellow-color;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .right-side{
+            .right-side-top{
+                .menu-icon{
+                    position: absolute;
+                    right:0;
+                    display: block;
+                    float: right;
+                    margin-left: auto;
+                    margin-right:20px;
+                    margin-top:20px;
+                    font-size:25px;
+
+                    
+                }
+            }
+        }
+    }
+
+
+    .main-1{
+        flex-direction: column;
+        width:100%;
+        justify-content: flex-end !important;
+        
+        .text-read-more{
+            width:70%;
+            margin-left:0;
+            margin-top:70px;
+
+
+            .title{
+                font-size:25px;
+            }
+
+            .description{
+                font-size:15px;
+            }
+        }
+
+        .contact-now-1{
+            width: 70%;
+            margin-right:0;
+            margin-top:70px;
+        }
+
+        .contact-now-2{
+            width:70%;
+            margin-right:0;
+            margin-top:50px;
+        }
+    }
+
+
+    .main-2{
+        width:100%;
+        height:80%;
+
+        .main-2-text{
+            margin-top:10px;
+            margin-left:40%;
+
+           h1{
+               font-size:25px;
+           }
+
+           .title-border-bottom{
+               height:2px;
+               width:40%;
+           }
+
+           .descriptioin{
+               font-size:15px;
+               width:90%;
+           }
+        }
+
+        .main-2-white-section{
+            height:70px !important;
+
+            .white-section-text{
+                display: none;
+            }
+        }
+    }
+
+
+    .main-3{
+        .box-top-text{
+            padding-bottom : 8px;
+            border-bottom: 2px solid $yellow-color;
+            font-size:30px;
+        }
+
+        .boxes{
+            width:100%;
+        }
+
+        @for $nu from 1 to 4 {
+            .box-#{$nu}{
+                h1{
+                    font-size:18px;
+                }
+
+                p{
+                    height:140px;
+                    overflow: hidden;
+                    text-align:left;
+                }
+            }
+        }
+    }
+
+
+    .main-4{
+        .main-4-cover{
+            div{
+                width:100%;
+
+                p{
+                    font-size:21px;
+                    width:80%;
+                    text-align:center;
+                }
+
+                .button{
+                    width:20%;
+
+                }
+            }
+        }
+    }
+
+    .main-7{
+        margin-top:0;
+        div{
+            @include flexBox(column);
+            width:80%;
+            text-align: center;
+        }
+    }
+
+    
+}
+
+@media (min-width:600px) and (max-width:992px){
+    .navbar{
+        .header{
+            .navbar-ul{
+                z-index: 20;
+                margin-left:0;
+                margin-right:120px;
+                li{
+                    font-size:12px !important;
+               }
+            }
+        }
+
+        .finde-properties{
+            margin-right:30px !important;
+            width:70% !important;
+        }
+
+        .bottom-white-section{
+            .icons{
+                margin-left:30px;
+            }
+        }
+    }
+
+    .main-1{
+        
+
+        .text-read-more{
+            width: 80% !important;
+            margin-left:20px;
+            margin-right:20px !important;
+            .button{
+                width:50%;
+            }
+            h1{
+                font-size:18px;
+            }
+        }
+
+        .contact-now-1{
+            width:80%;
+            margin-right:20px !important;
+        }
+
+        .contact-now-2{
+            width:80%;
+            margin-right:20px !important;
+        }
+    }
+
+    .main-2{
+        .white-section-text{
+            font-size:25px !important;
+            margin-right:180px !important;
+        }
+
+        .main-2-text{
+            margin-left:40%;
+
+            .button{
+                margin-top:50px;
+            }
+        }
+    }
+    .main-3{
+        margin-top:0;
+        .boxes{
+            width:95%;
+            @for $nu from 1 to 4 {
+                .box-#{$nu}{
+                    width: 30%;
+                    h1{
+                        font-size:18px;
+                    }
+    
+                    p{
+                        height:140px;
+                        overflow: hidden;
+                        text-align:left;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .main-7{
+        margin-top:100px;
+        
+        div{
+            width:70%;
+
+            .button{
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1100px){
+    .main-7{
+        margin-top:150px;
     }
 }

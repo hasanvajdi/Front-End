@@ -7,17 +7,16 @@
     <script src="https://kit.fontawesome.com/b8cc86c36b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/animate.css">
-    <script src="js/wow.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    
    
     
 
     <title>find house</title>
 </head>
 <body>
+    
     <div class="navbar">
+        
         <img src="image/navbar-img.jpg" alt="" class="navbar-image">
         
         <div class="bottom-white-section">
@@ -28,12 +27,13 @@
                 <i class="fa fa-instagram white-section-icon" aria-hidden="true"></i>
                 <i class="fa fa-google-plus white-section-icon" aria-hidden="true"></i>
                 <i class="fa fa-rss white-section-icon" aria-hidden="true"></i>
-
+                
             </div>
         </div>
-        
         <div class="header">
-            <ul class="animate__animated animate__slideInDown">
+            <i class='fa fa-times menu-icon2' style="color:white;"></i>
+
+            <ul class="navbar-ul animate__animated animate__slideInDown" >
                 <li>PROPERTIES</li>
                 <li>BUYERS</li>
                 <li>SELLERS</li>
@@ -41,9 +41,11 @@
                 <li>ABOUT</li>
                 <li>CONTACT</li>
             </ul>
+
         </div>
 
         <div class="left-side">
+
             <div class="finde-properties animate__animated animate__zoomIn animate__delay-1s">
                 <div class="inputs-1">
                     <input class="properties-input" type="text" placeholder="properties loaction">
@@ -71,28 +73,31 @@
 
         <div class="right-side">
             <div class="right-side-top">
-
+                <i class='fa fa-bars menu-icon'></i>
             </div>
         </div>
     </div>
 
+
     <div class="main-1">
-        <div class="text-read-more wow animate__animated animate__bounceInLeft">
+        <div class="text-read-more wow animate__animated animate__fadeInLeft" data-wow-duration="1s">
             <h1 class="title">Lorem ipsum dolor sit amet</h1>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero minus optio nobis, corrupti quod doloremque dignissimos odit impedit maxime ea mollitia accusantium quos temporibus nesciunt expedita at, earum debitis harum.</p>
             <div class="button">Read More</div>
         </div>
 
-        <div class="contact-now-1">
-            <div class="contact-1-cover">finde your dream home</div>
-            <img src="image/contact-1.jpg" alt="">
+        <div class="contact-now-1 wow animate__animated" data-wow-duration="1.5s">
+            <div class="image-cover-container">
+                <div class="contact-1-cover">finde your dream home</div>
+                <img src="image/contact-1.jpg" alt="">
+            </div>
             <p>
                iste sunt quasum aspernatur? unde obcaecati similique inventore magnam error quis. Quaerat.
             </p>
             <div class="button">contact now</div>
         </div>
 
-        <div class="contact-now-2 ">
+        <div class="contact-now-2 wow animate__animated" data-wow-duration="2s">
            <div class="one">
                 <div class="cover-2-1">select your house</div>
                 <img src="image/contact-2.jpg" alt="">
@@ -118,11 +123,14 @@
         </div>
 
         <div class="main-2-white-section">
-            <span class="wow animate__animated animate__bounceInLeft" data-wow-duration="2s">CATERGORIES</span>
+            <span class="white-section-text wow animate__animated animate__bounceInLeft" data-wow-duration="2s">CATERGORIES</span>
         </div>
+
+
     </div>
 
     <div class="main-3">
+        <span class="box-top-text wow animate__animated animate__fadeInDown" data-wow-duration="2s">CATERGORIES</span>
 
         <div class="boxes" >
             <div class="box-1 wow animate__animated animate__fadeInRight" data-wow-duration="1s">
@@ -205,11 +213,14 @@
 
     <footer>
         2022 made by <span> hasan vajdi</span> All rights Reserverd
-        
     </footer>
 
 
     
-
+    <script src="js/wow.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
