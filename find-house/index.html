@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b8cc86c36b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+   
+    
+
     <title>find house</title>
 </head>
 <body>
@@ -26,7 +33,7 @@
         </div>
         
         <div class="header">
-            <ul class="nimate__animated animate__slideInDown">
+            <ul class="animate__animated animate__slideInDown">
                 <li>PROPERTIES</li>
                 <li>BUYERS</li>
                 <li>SELLERS</li>
@@ -37,7 +44,7 @@
         </div>
 
         <div class="left-side">
-            <div class="finde-properties animate__animated animate__zoomIn">
+            <div class="finde-properties animate__animated animate__zoomIn animate__delay-1s">
                 <div class="inputs-1">
                     <input class="properties-input" type="text" placeholder="properties loaction">
                     <input class="properties-input" type="text" placeholder="price">
@@ -70,7 +77,7 @@
     </div>
 
     <div class="main-1">
-        <div class="text-read-more">
+        <div class="text-read-more wow animate__animated animate__bounceInLeft">
             <h1 class="title">Lorem ipsum dolor sit amet</h1>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero minus optio nobis, corrupti quod doloremque dignissimos odit impedit maxime ea mollitia accusantium quos temporibus nesciunt expedita at, earum debitis harum.</p>
             <div class="button">Read More</div>
@@ -85,7 +92,7 @@
             <div class="button">contact now</div>
         </div>
 
-        <div class="contact-now-2">
+        <div class="contact-now-2 ">
            <div class="one">
                 <div class="cover-2-1">select your house</div>
                 <img src="image/contact-2.jpg" alt="">
@@ -102,7 +109,7 @@
     <div class="main-2">
         <div class="main-2-cover"></div>
         <img src="image/city.jpg" alt="">
-        <div class="main-2-text">
+        <div class="main-2-text wow animate__animated animate__fadeIn" data-wow-duration="2s">
             <h1>lorem inpusm is the best</h1>
             <div class="title-border-bottom"></div>
             <p>$45,000,000</p>
@@ -111,95 +118,98 @@
         </div>
 
         <div class="main-2-white-section">
-            <span>CATERGORIES</span>
+            <span class="wow animate__animated animate__bounceInLeft" data-wow-duration="2s">CATERGORIES</span>
         </div>
-
-        <div class="main-3">
-
-            <div class="boxes">
-                <div class="box-1">
-                    <img src="image/house-1..jpg" alt="">
-                    <h1>lorem inpsum is the bes</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos laboriosam, consequatur voluptatem eum numquam accusamus totam asperiores cumque neque necessitatibus iure, magnam sapiente impedit velit. Aperiam perferendis ipsam dolorem qui.</p>
-                    <div class="learn-more">
-                        Learn More
-                    </div>
-                </div>
-                
-                <div class="box-2">
-                    <img src="image/house-2.jpg" alt="">
-                    <h1>lorem inpsum is the bes</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos laboriosam, consequatur voluptatem eum numquam accusamus totam asperiores cumque neque necessitatibus iure, magnam sapiente impedit velit. Aperiam perferendis ipsam dolorem qui.</p>
-                    <div class="learn-more">
-                        Learn More
-                    </div>
-                </div>
-    
-                <div class="box-3">
-                    <img src="image/house-3.jpg" alt="">
-                    <h1>lorem inpsum is the bes</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos laboriosam, consequatur voluptatem eum numquam accusamus totam asperiores cumque neque necessitatibus iure, magnam sapiente impedit velit. Aperiam perferendis ipsam dolorem qui.</p>
-                    <div class="learn-more">
-                        Learn More
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="main-4">
-            <div class="main-4-cover">
-                <div>
-                    <p >Are you looking for house or rental office?</p>
-                    <div class="button">Buy Now</div>
-                </div>
-            </div>
-            <img src="image/contact-1.jpg" alt="">
-            
-        </div>
-
-
-        <div class="main-5">
-            <h1>Feauterd Listings</h1>
-            <div>
-                <ul>
-                    <li>For Rent</li>
-                    <li>sold</li>
-                    <li>open house</li>
-                    <li>new additons</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div class="main-6">
-            <div class="one">
-                <img src="image/house-3.jpg" alt="">
-                <img src="image/contact-1.jpg" alt="">
-                <img src="image/contact-2.jpg" alt="">
-            </div>
-            <div class="two">
-                <img src="image/contact-2.jpg" alt="">
-                <img src="image/house-2.jpg" alt="">
-                <img src="image/house-3.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="main-7">
-            <div>
-                <h1>Newsister singup</h1>
-                <p>lorem inpsum is the best worker for fungiorem inpsum is the best worker for fungin jop offer in </p>
-        
-                <input type="text" name="enter your email" id="" class="email-input" placeholder="enter your email">
-                <div class="button">Subscribe</div>
-            </div>
-        </div>
-
-        <footer>
-            2022 made by <span> hasan vajdi</span> All rights Reserverd
-            
-        </footer>
     </div>
+
+    <div class="main-3">
+
+        <div class="boxes" >
+            <div class="box-1 wow animate__animated animate__fadeInRight" data-wow-duration="1s">
+                <img src="image/house-1..jpg" alt="">
+                <h1>lorem inpsum is the bes</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos laboriosam, consequatur voluptatem eum numquam accusamus totam asperiores cumque neque necessitatibus iure, magnam sapiente impedit velit. Aperiam perferendis ipsam dolorem qui.</p>
+                <div class="learn-more">
+                    Learn More
+                </div>
+            </div>
+            
+            <div class="box-2 wow animate__animated animate__fadeInLeft" data-wow-duration="1s">
+                <img src="image/house-2.jpg" alt="">
+                <h1>lorem inpsum is the bes</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos laboriosam, consequatur voluptatem eum numquam accusamus totam asperiores cumque neque necessitatibus iure, magnam sapiente impedit velit. Aperiam perferendis ipsam dolorem qui.</p>
+                <div class="learn-more">
+                    Learn More
+                </div>
+            </div>
+
+            <div class="box-3 wow animate__animated animate__fadeInRight" data-wow-duration="1s">
+                <img src="image/house-3.jpg" alt="">
+                <h1>lorem inpsum is the bes</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos laboriosam, consequatur voluptatem eum numquam accusamus totam asperiores cumque neque necessitatibus iure, magnam sapiente impedit velit. Aperiam perferendis ipsam dolorem qui.</p>
+                <div class="learn-more">
+                    Learn More
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="main-4">
+        <div class="main-4-cover">
+            <div>
+                <p class="wow animate__animated animate__fadeInLeft" data-wow-duration="1s">Are you looking for house or rental office?</p>
+                <div class="button wow animate__animated animate__fadeIn" data-wow-duration="1s">Buy Now</div>
+            </div>
+        </div>
+        <img src="image/city.jpg" alt="">
+    </div>
+
+
+    <div class="main-5">
+        <h1>Feauterd Listings</h1>
+        <div>
+            <ul>
+                <li>For Rent</li>
+                <li>sold</li>
+                <li>open house</li>
+                <li>new additons</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-6">
+        <div class="one">
+            <img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" src="image/house-3.jpg" alt="">
+            <img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" src="image/contact-1.jpg" alt="">
+            <img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" src="image/contact-2.jpg" alt="">
+        </div>
+        <div class="two">
+            <img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" src="image/contact-2.jpg" alt="">
+            <img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" src="image/house-2.jpg" alt="">
+            <img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" src="image/house-3.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="main-7">
+        <div class="wow animate__animated animate__fadeIn" data-wow-duration="4s">
+            <h1>Newsister singup</h1>
+            <p>lorem inpsum is the best worker for fungiorem inpsum is the best worker for fungin jop offer in </p>
+    
+            <input type="text" name="enter your email" id="" class="email-input" placeholder="enter your email">
+            <div class="button">Subscribe</div>
+        </div>
+    </div>
+
+    <footer>
+        2022 made by <span> hasan vajdi</span> All rights Reserverd
+        
+    </footer>
+
+
+    
+
 </body>
 </html>

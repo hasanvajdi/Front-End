@@ -57,8 +57,8 @@ body {
   top: 0;
   position: absolute;
   background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
+          backdrop-filter: blur(5.5px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,6 +815,11 @@ body {
   margin-left: 20px;
 }
 
+.main-4 img {
+  height: 100% !important;
+  width: 100% !important;
+}
+
 .main-5 {
   width: 100%;
   height: 100px;
@@ -891,6 +896,7 @@ body {
 
 .main-6 .one img {
   height: 50%;
+  width: 30%;
 }
 
 .main-6 .two {
@@ -911,6 +917,7 @@ body {
 
 .main-6 .two img {
   height: 50%;
+  width: 30%;
 }
 
 .main-7 {

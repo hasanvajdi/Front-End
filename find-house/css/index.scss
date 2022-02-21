@@ -64,7 +64,6 @@ body{
         position: absolute;
         background: rgba( 0, 0, 0, 0.40 );       
         backdrop-filter: blur( 5.5px );
-        -webkit-backdrop-filter: blur( 5.5px );
         @include flexBox(row);
 
         ul{
@@ -506,6 +505,11 @@ body{
             margin-left:20px;
         }
     }
+
+    img{
+        height: 100% !important;
+        width:100% !important;
+    }
 }
 
 
@@ -548,6 +552,7 @@ body{
 
         img{
             height: 50%;
+            width:30%;
         }
     }
 
@@ -556,6 +561,7 @@ body{
 
         img{
             height: 50%;
+            width:30%;
         }
     }
 }
