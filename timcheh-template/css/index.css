@@ -49,6 +49,7 @@ body {
   position: absolute;
   left: 0;
   margin-left: 110px;
+  cursor: pointer;
 }
 
 .header-navbar-container .header .login-signup .login-signup-icon {
@@ -74,6 +75,7 @@ body {
   border-radius: 3px;
   margin-right: auto;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .header-navbar-container .header .cart .cart-icon {
@@ -181,7 +183,638 @@ body {
   color: #673ab7;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.carousels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+  height: 440px;
+}
+
+.carousels .products {
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  border-radius: 3px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.carousels .products .product-1 {
+  width: 100%;
+  height: 100%;
+}
+
+.carousels .products .product-1 .product-image-1 {
+  height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.carousels .products .product-1 .product-image-1 img {
+  height: 70%;
+  width: 50%;
+}
+
+.carousels .products .product-1 .product-body-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.carousels .products .product-1 .product-body-1 .product-score-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+.carousels .products .product-1 .product-body-1 .product-score-1 span:nth-child(1) {
+  margin-top: 5px;
+  margin-right: 3px;
+  font-size: 14px;
+  color: gray;
+}
+
+.carousels .products .product-1 .product-body-1 .product-score-1 span:nth-child(2) {
+  color: #ffc107;
+}
+
+.carousels .products .product-1 .product-body-1 .product-caption-1, .carousels .products .product-1 .product-body-1 .product-des-1 {
+  text-align: right;
+  direction: rtl;
+  max-width: 95%;
+  padding-right: 10px;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.carousels .products .product-1 .product-body-1 .product-des-1 {
+  color: gray;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+.carousels .products .product-1 .product-body-1 .product-price {
+  width: 100%;
+  color: #4b4b4b;
+  text-align: center;
+  direction: rtl;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.carousels .products .product-1 .product-body-1 .product-price:hover {
+  color: #ffc107;
+  cursor: pointer;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.carousels .products .product-1 .product-body-1 .add-to-cart {
+  width: 90%;
+  height: 45px;
+  margin-top: 20px !important;
+  padding-right: 10px;
+}
+
+.carousels .products .product-1 .product-body-1 .add-to-cart .add-to-cart-button {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  overflow: hidden !important;
+  cursor: pointer;
+  float: right;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-duration: 0.8s !important;
+          transition-duration: 0.8s !important;
+}
+
+.carousels .products .product-1 .product-body-1 .add-to-cart .add-to-cart-button span:nth-child(1) {
+  float: right;
+  color: gray;
+  font-size: 23px;
+}
+
+.carousels .products .product-1 .product-body-1 .add-to-cart .add-to-cart-button span:nth-child(2) {
+  color: gray;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.carousels .products .product-1 .product-body-1 .add-to-cart .cart-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  width: 50px;
+  margin-top: 10px;
+}
+
+.carousels .products .product-1 .product-body-1 .add-to-cart .cart-tools span {
+  font-size: 20px;
+  color: gray;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.carousels .products .product-1 .product-body-1 .add-to-cart .cart-tools span:hover {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+
+.carousels .products .product-2 {
+  width: 100%;
+  height: 100%;
+}
+
+.carousels .products .product-2 .product-image-2 {
+  height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.carousels .products .product-2 .product-image-2 img {
+  height: 70%;
+  width: 50%;
+}
+
+.carousels .products .product-2 .product-body-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.carousels .products .product-2 .product-body-2 .product-score-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+.carousels .products .product-2 .product-body-2 .product-score-2 span:nth-child(1) {
+  margin-top: 5px;
+  margin-right: 3px;
+  font-size: 14px;
+  color: gray;
+}
+
+.carousels .products .product-2 .product-body-2 .product-score-2 span:nth-child(2) {
+  color: #ffc107;
+}
+
+.carousels .products .product-2 .product-body-2 .product-caption-2, .carousels .products .product-2 .product-body-2 .product-des-2 {
+  text-align: right;
+  direction: rtl;
+  max-width: 95%;
+  padding-right: 10px;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.carousels .products .product-2 .product-body-2 .product-des-2 {
+  color: gray;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+.carousels .products .product-2 .product-body-2 .product-price {
+  width: 100%;
+  color: #4b4b4b;
+  text-align: center;
+  direction: rtl;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.carousels .products .product-2 .product-body-2 .product-price:hover {
+  color: #ffc107;
+  cursor: pointer;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.carousels .products .product-2 .product-body-2 .add-to-cart {
+  width: 90%;
+  height: 45px;
+  margin-top: 20px !important;
+  padding-right: 10px;
+}
+
+.carousels .products .product-2 .product-body-2 .add-to-cart .add-to-cart-button {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  overflow: hidden !important;
+  cursor: pointer;
+  float: right;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-duration: 0.8s !important;
+          transition-duration: 0.8s !important;
+}
+
+.carousels .products .product-2 .product-body-2 .add-to-cart .add-to-cart-button span:nth-child(1) {
+  float: right;
+  color: gray;
+  font-size: 23px;
+}
+
+.carousels .products .product-2 .product-body-2 .add-to-cart .add-to-cart-button span:nth-child(2) {
+  color: gray;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.carousels .products .product-2 .product-body-2 .add-to-cart .cart-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  width: 50px;
+  margin-top: 10px;
+}
+
+.carousels .products .product-2 .product-body-2 .add-to-cart .cart-tools span {
+  font-size: 20px;
+  color: gray;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.carousels .products .product-2 .product-body-2 .add-to-cart .cart-tools span:hover {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+
+.carousels .products .product-3 {
+  width: 100%;
+  height: 100%;
+}
+
+.carousels .products .product-3 .product-image-3 {
+  height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.carousels .products .product-3 .product-image-3 img {
+  height: 70%;
+  width: 50%;
+}
+
+.carousels .products .product-3 .product-body-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.carousels .products .product-3 .product-body-3 .product-score-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+.carousels .products .product-3 .product-body-3 .product-score-3 span:nth-child(1) {
+  margin-top: 5px;
+  margin-right: 3px;
+  font-size: 14px;
+  color: gray;
+}
+
+.carousels .products .product-3 .product-body-3 .product-score-3 span:nth-child(2) {
+  color: #ffc107;
+}
+
+.carousels .products .product-3 .product-body-3 .product-caption-3, .carousels .products .product-3 .product-body-3 .product-des-3 {
+  text-align: right;
+  direction: rtl;
+  max-width: 95%;
+  padding-right: 10px;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.carousels .products .product-3 .product-body-3 .product-des-3 {
+  color: gray;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+.carousels .products .product-3 .product-body-3 .product-price {
+  width: 100%;
+  color: #4b4b4b;
+  text-align: center;
+  direction: rtl;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.carousels .products .product-3 .product-body-3 .product-price:hover {
+  color: #ffc107;
+  cursor: pointer;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.carousels .products .product-3 .product-body-3 .add-to-cart {
+  width: 90%;
+  height: 45px;
+  margin-top: 20px !important;
+  padding-right: 10px;
+}
+
+.carousels .products .product-3 .product-body-3 .add-to-cart .add-to-cart-button {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  overflow: hidden !important;
+  cursor: pointer;
+  float: right;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-duration: 0.8s !important;
+          transition-duration: 0.8s !important;
+}
+
+.carousels .products .product-3 .product-body-3 .add-to-cart .add-to-cart-button span:nth-child(1) {
+  float: right;
+  color: gray;
+  font-size: 23px;
+}
+
+.carousels .products .product-3 .product-body-3 .add-to-cart .add-to-cart-button span:nth-child(2) {
+  color: gray;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.carousels .products .product-3 .product-body-3 .add-to-cart .cart-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  width: 50px;
+  margin-top: 10px;
+}
+
+.carousels .products .product-3 .product-body-3 .add-to-cart .cart-tools span {
+  font-size: 20px;
+  color: gray;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.carousels .products .product-3 .product-body-3 .add-to-cart .cart-tools span:hover {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+
+.carousels .images {
+  width: 75%;
+  background-color: yellow;
 }
 /*# sourceMappingURL=index.css.map */

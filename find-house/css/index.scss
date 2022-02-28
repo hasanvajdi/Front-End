@@ -196,7 +196,6 @@ input{
 .main-1{
     width : 100%;
     height : 100%;
-    background-color: blue;
     background-color: $gray-color;
     @include flexBox(row);
     justify-content: space-around;
@@ -632,7 +631,15 @@ footer{
 
 
 @media (max-width:600px){
+    .white-section-text{
+        visibility: hidden !important;
+    }
     .navbar{
+
+        .bottom-white-section{
+            visibility: hidden;
+        }
+        
         .icons{
             visibility: hidden;
         }
@@ -732,14 +739,18 @@ footer{
 
     .main-2{
         width:100%;
-        height:80%;
+        height:100%;
+
+        img{
+            height:100% !important;
+        }
 
         .main-2-text{
+            width:90%;
             margin-top:10px;
-            margin-left:40%;
 
            h1{
-               font-size:25px;
+               font-size:20px;
            }
 
            .title-border-bottom{
@@ -754,28 +765,36 @@ footer{
         }
 
         .main-2-white-section{
-            height:70px !important;
-
-            .white-section-text{
-                display: none;
-            }
+           visibility: hidden;
         }
     }
 
 
     .main-3{
+        height: fit-content;
+        margin-top:150px;
+
         .box-top-text{
             padding-bottom : 8px;
             border-bottom: 2px solid $yellow-color;
             font-size:30px;
+            visibility: visible !important;
         }
 
         .boxes{
             width:100%;
+            @include flexBox(column);
+            margin-top:80px;
+
         }
 
         @for $nu from 1 to 4 {
             .box-#{$nu}{
+                width:90%;
+                @if $nu!=1 {
+                    margin-top:200px;
+                }
+
                 h1{
                     font-size:18px;
                 }
@@ -791,6 +810,7 @@ footer{
 
 
     .main-4{
+        margin-top:200px;
         .main-4-cover{
             div{
                 width:100%;
@@ -889,10 +909,11 @@ footer{
     .main-3{
         margin-top:0;
         .boxes{
-            width:95%;
+            flex-direction: column !important;
+            width:100%;
             @for $nu from 1 to 4 {
                 .box-#{$nu}{
-                    width: 30%;
+                    width: 90%;
                     h1{
                         font-size:18px;
                     }

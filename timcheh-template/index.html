@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>تیمچه | حسن وجدی</title>
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="header-navbar-container">
@@ -41,5 +44,141 @@
             </div>
         </div>
     </div>
+
+    <div class="carousels">
+        
+        <div class="owl-carousel products">
+
+            <div class="product product-1">
+                <div class="product-image-1">
+                    <img src="image/products/1.jpg" alt="">
+                </div>
+                
+                <div class="product-body-1">
+                    <div class="product-score-1">
+                        <span>بدون امتیاز</span>
+                        <span class="material-icons-outlined">star_outline</span>
+                    </div>
+                    <div class="product-caption-1">
+                        <span>کاپشن پیراهن مردانه نایک کلاه دار</span>
+                    </div>
+
+                    <div class="product-des-1">
+                        <span>Northest 146 easte</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span>450,000 تومان</span>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <div class="add-to-cart-button">
+                            <span class="material-icons-outlined">shopping_cart</span>
+                            <span>افزودن به سبد خرید</span>
+                        </div>
+
+                        <div class="cart-tools">
+                            <span class="material-icons-outlined">search</span>
+                            <span class="material-icons-outlined">shuffle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product product-2">
+                <div class="product-image-2">
+                    <img src="image/products/2.jpg" alt="">
+                </div>
+                <div class="product-body-2">
+                    <div class="product-score-2">
+                        <span>بدون امتیاز</span>
+                        <span class="material-icons-outlined">star_outline</span>
+                    </div>
+    
+                    <div class="product-caption-2">
+                        <span>آیمک 24 اینچ M1 ظرفیت 512GB/8-8 Core مدل 2021</span>
+                    </div>
+
+                    <div class="product-des-2">
+                        <span>SumSSung Core مدل 2021</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span>450,000 تومان</span>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <div class="add-to-cart-button">
+                            <span class="material-icons-outlined">shopping_cart</span>
+                            <span>افزودن به سبد خرید</span>
+                        </div>
+
+                        <div class="cart-tools">
+                            <span class="material-icons-outlined">search</span>
+                            <span class="material-icons-outlined">shuffle</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+
+            <div class="product product-3">
+                <div class="product-image-3">
+                    <img src="image/products/3.jpg" alt="">
+                </div>
+                <div class="product-body-3">
+                    <div class="product-score-3">
+                        <span>بدون امتیاز</span>
+                        <span class="material-icons-outlined">star_outline</span>
+                    </div>
+                    <div class="product-caption-3">
+                        <span>هدفون بی سیم سامسونگ مدل Galaxy Buds Live</span>
+                    </div>
+
+                    <div class="product-des-3">
+                        <span>Galaxy Buds Live</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span>450,000 تومان</span>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <div class="add-to-cart-button">
+                            <span class="material-icons-outlined">shopping_cart</span>
+                            <span class="add-to-cart-text">افزودن به سبد خرید</span>
+                        </div>
+
+                        <div class="cart-tools">
+                            <span class="material-icons-outlined">shuffle</span>
+                            <span class="material-icons-outlined">search</span>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+        </div>
+
+        
+        <div class="owl-carousel images">
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({items:1});
+        });
+    </script>
 </body>
 </html>
