@@ -12,7 +12,6 @@ body {
 .header-navbar-container {
   width: 100%;
   height: 180px;
-  background-color: yellow;
 }
 
 .header-navbar-container .header {
@@ -815,6 +814,314 @@ body {
 
 .carousels .images {
   width: 75%;
-  background-color: yellow;
+  height: 100%;
+  position: relative;
+  border-radius: 3px;
+}
+
+.carousels .images img {
+  height: 440px;
+  border-radius: 3px;
+}
+
+.categories {
+  width: 98%;
+  height: 110px;
+  margin: 50px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  padding: 0 !important;
+}
+
+.categories div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 15%;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.categories div:hover {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  cursor: pointer;
+  background-color: #673ab7;
+  color: white;
+}
+
+.categories div span:nth-child(2) {
+  margin-top: 15px;
+}
+
+.amazing-offer {
+  width: 98%;
+  height: 50px;
+  margin: 80px auto 0 auto;
+  border-radius: 3px;
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.amazing-offer span {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.amazing-offer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 15px;
+  font-size: 13px;
+  padding: 5px;
+  background-color: #ebeef2;
+  width: 90px;
+  border-radius: 3px;
+}
+
+.amazing-offer div span:nth-child(1) {
+  font-size: 16px;
+}
+
+.amazing-offer div:hover {
+  background-color: #ffc107;
+  color: white;
+  cursor: pointer;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.amazing-offer div * {
+  padding: 0;
+  margin: 0;
+}
+
+.buy-month {
+  width: 98%;
+  margin: 50px auto 0 auto;
+}
+
+.buy-month img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: white;
+}
+
+.footer .properties {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 2px dashed #ebeef2;
+  padding-bottom: 40px;
+}
+
+.footer .properties .property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .properties .property img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer .properties .property span {
+  padding-top: 20px;
+}
+
+.footer .descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 50px;
+}
+
+.footer .descriptions .timche-online {
+  width: 40%;
+  text-align: justify;
+  direction: rtl;
+}
+
+.footer .descriptions .timche-online span {
+  font-size: 25px;
+}
+
+.footer .descriptions .timche-online p {
+  color: gray;
+  word-spacing: 5px;
+}
+
+.footer .descriptions .with-timche {
+  margin-right: 60px;
+}
+
+.footer .descriptions .with-timche span {
+  font-size: 25px;
+}
+
+.footer .descriptions .with-timche ul {
+  list-style-type: none;
+  text-align: right;
+  color: gray;
+}
+
+.footer .descriptions .with-timche ul li {
+  padding-bottom: 5px;
+}
+
+.footer .descriptions .contact-us {
+  text-align: right;
+  margin-right: 100px;
+  margin-top: 0;
+}
+
+.footer .descriptions .contact-us .contact-us-text {
+  font-size: 25px;
+}
+
+.footer .descriptions .contact-us div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  direction: rtl;
+  color: gray;
+  padding-top: 20px;
+}
+
+.footer .descriptions .contact-us div span:nth-child(2) {
+  padding-right: 10px;
+}
+
+.footer footer {
+  background-color: lightgray;
+  height: 80px;
+  margin-top: 90px;
+  direction: rtl;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer footer span {
+  color: #673ab7;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 /*# sourceMappingURL=index.css.map */
